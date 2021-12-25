@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1a1f1f;
+    font-family: sans-serif;
+}
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 1s all;
+    opacity: 1;
+}
+.done{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader {
+    width: 75px;
+    height: 75px;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-top-color: blue;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: 1s spin infinite linear;
+}
+@keyframes spin {
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    
+}
+
+.container{
+    padding: 30px;
+    width: 1100px;
+    margin: auto;
+}
+.search {
+    width: 84%;
+    border: 1px solid #363d3d;
+    padding: 15px 45px 9px 20px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    height: 30px;
+    background-color: #363d3d;
+    color: antiquewhite;
+}
+.search:focus { outline: none; }
+.animeBtn{
+    background-color: #363d3d;
+    height: 56px;
+    border: 1px solid #363d3d;
+    width: 109px;
+    cursor: pointer;
+}
+.searchIcon{
+    width: 20px;
+    height: 20px;
+}
+.animeInfo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animeBlock{
+    margin: 15px;
+}
+img {
+    height: 300px;
+    width: 240px;
+
+}
+p {
+    font-size: 18px;
+    width: 240px;
+    text-align: center;
+    color: antiquewhite;
+}
+.animeBg {
+    margin-top: 30px;
+    background-color: #363d3d;
+}
+.ratingBlock {
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rating {
+    background-color: #ffc107;
+    width: 50px;
+    border-radius: 5px;
+    color: white;
+}
+.star {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
